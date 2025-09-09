@@ -1,0 +1,2 @@
+const AdminPassKeys = () => <div><h1 className="text-3xl font-bold">Pass Keys Management</h1><p className="text-muted-foreground">Generate and manage access keys</p></div>;
+export default AdminPassKeys;

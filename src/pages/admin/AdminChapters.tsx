@@ -1,0 +1,2 @@
+const AdminChapters = () => <div><h1 className="text-3xl font-bold">Chapters Management</h1><p className="text-muted-foreground">Upload and manage chapter content</p></div>;
+export default AdminChapters;

@@ -1,0 +1,2 @@
+const AdminSubjects = () => <div><h1 className="text-3xl font-bold">Subjects Management</h1><p className="text-muted-foreground">Manage subject categories and content</p></div>;
+export default AdminSubjects;

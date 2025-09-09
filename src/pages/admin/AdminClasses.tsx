@@ -1,0 +1,2 @@
+const AdminClasses = () => <div><h1 className="text-3xl font-bold">Classes Management</h1><p className="text-muted-foreground">Manage class levels and curriculum</p></div>;
+export default AdminClasses;

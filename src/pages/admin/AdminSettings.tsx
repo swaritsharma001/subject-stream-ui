@@ -1,0 +1,2 @@
+const AdminSettings = () => <div><h1 className="text-3xl font-bold">Site Settings</h1><p className="text-muted-foreground">Configure website settings and preferences</p></div>;
+export default AdminSettings;
