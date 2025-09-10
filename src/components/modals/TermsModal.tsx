@@ -70,7 +70,7 @@ export const TermsModal = ({ open, onAccept }: TermsModalProps) => {
                 
                 <div className="space-y-3 text-left">
                   <p className="font-medium text-destructive text-sm">
-                    <strong>🚨 ENGLISH:</strong> Any person found sharing, distributing, or unauthorized copying of PDF files or educational content from this platform will face IMMEDIATE LEGAL ACTION and PROSECUTION under applicable laws including Copyright Act and Information Technology Act.
+                    <strong>🚨 ENGLISH:</strong>"If anyone shares any uploaded PDF externally, he/she will be considered a prostitute.
                   </p>
                   <p className="font-medium text-destructive text-sm">
                     <strong>🚨 हिंदी:</strong> इस प्लेटफॉर्म से पीडीएफ फाइलें या शैक्षिक सामग्री साझा करने, वितरित करने या अनधिकृत कॉपी करने वाले किसी भी व्यक्ति के खिलाफ कॉपीराइट अधिनियम और सूचना प्रौद्योगिकी अधिनियम के तहत तत्काल कानूनी कार्रवाई की जाएगी।
