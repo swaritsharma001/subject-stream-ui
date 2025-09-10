@@ -51,6 +51,27 @@ const Terms = () => {
       {/* Main Content */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
+          {/* Critical Warning */}
+          <Card className="mb-8 border-destructive bg-destructive/5">
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2 text-destructive">
+                <AlertTriangle className="h-6 w-6" />
+                CRITICAL WARNING / महत्वपूर्ण चेतावनी
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="bg-destructive/10 p-4 rounded-lg border border-destructive/20">
+                <h3 className="font-bold text-lg text-destructive mb-2">⚠️ STRICT PROHIBITION ON FILE SHARING</h3>
+                <p className="font-medium text-destructive">
+                  <strong>ENGLISH:</strong> Any person found sharing, distributing, or unauthorized copying of PDF files or educational content from this platform will face IMMEDIATE LEGAL ACTION and PROSECUTION under applicable laws including Copyright Act and Information Technology Act. We maintain strict monitoring and tracking systems.
+                </p>
+                <p className="font-medium text-destructive mt-2">
+                  <strong>हिंदी:</strong> इस प्लेटफॉर्म से पीडीएफ फाइलें या शैक्षिक सामग्री साझा करने, वितरित करने या अनधिकृत कॉपी करने वाले किसी भी व्यक्ति के खिलाफ कॉपीराइट अधिनियम और सूचना प्रौद्योगिकी अधिनियम सहित लागू कानूनों के तहत तत्काल कानूनी कार्रवाई और मुकदमा चलाया जाएगा। हम सख्त निगरानी और ट्रैकिंग सिस्टम बनाए रखते हैं।
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Introduction */}
           <Card className="mb-12 card-gradient">
             <CardHeader>
