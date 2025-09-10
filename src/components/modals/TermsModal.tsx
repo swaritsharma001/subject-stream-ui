@@ -11,6 +11,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { useState, useEffect } from 'react';
 import { api, SiteSettings } from '@/lib/api';
+import { AlertTriangle } from 'lucide-react';
 
 interface TermsModalProps {
   open: boolean;
@@ -59,6 +60,30 @@ export const TermsModal = ({ open, onAccept }: TermsModalProps) => {
 
         <ScrollArea className="px-6 max-h-[50vh]">
           <div className="space-y-6">
+            {/* Critical Copyright Warning */}
+            <section className="bg-destructive/10 border-2 border-destructive rounded-lg p-4">
+              <div className="text-center space-y-3">
+                <div className="flex items-center justify-center gap-2 text-destructive">
+                  <AlertTriangle className="h-6 w-6" />
+                  <h3 className="text-xl font-bold">CRITICAL WARNING / महत्वपूर्ण चेतावनी</h3>
+                </div>
+                
+                <div className="space-y-3 text-left">
+                  <p className="font-medium text-destructive text-sm">
+                    <strong>🚨 ENGLISH:</strong> Any person found sharing, distributing, or unauthorized copying of PDF files or educational content from this platform will face IMMEDIATE LEGAL ACTION and PROSECUTION under applicable laws including Copyright Act and Information Technology Act.
+                  </p>
+                  <p className="font-medium text-destructive text-sm">
+                    <strong>🚨 हिंदी:</strong> इस प्लेटफॉर्म से पीडीएफ फाइलें या शैक्षिक सामग्री साझा करने, वितरित करने या अनधिकृत कॉपी करने वाले किसी भी व्यक्ति के खिलाफ कॉपीराइट अधिनियम और सूचना प्रौद्योगिकी अधिनियम के तहत तत्काल कानूनी कार्रवाई की जाएगी।
+                  </p>
+                  <p className="text-center font-bold text-destructive">
+                    ⚖️ WE MONITOR ALL ACTIVITIES / हम सभी गतिविधियों की निगरानी करते हैं ⚖️
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <Separator />
+
             {/* Terms of Service */}
             <section>
               <h3 className="text-lg font-semibold mb-3 text-primary">
