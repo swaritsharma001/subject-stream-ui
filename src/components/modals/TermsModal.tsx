@@ -128,24 +128,24 @@ export const TermsModal = ({ open, onAccept }: TermsModalProps) => {
 
         <DialogFooter className="p-6 pt-4 space-y-4">
           <div className="space-y-3 w-full">
-            <label className="flex items-start gap-3 cursor-pointer">
+            <label className="flex items-center gap-3 cursor-pointer">
               <input
                 type="checkbox"
                 checked={agreedToTerms}
                 onChange={(e) => setAgreedToTerms(e.target.checked)}
-                className="mt-1 h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2"
+                className="h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2 flex-shrink-0"
               />
               <span className="text-sm text-foreground">
                 I have read and agree to the <strong>Terms of Service</strong>
               </span>
             </label>
             
-            <label className="flex items-start gap-3 cursor-pointer">
+            <label className="flex items-center gap-3 cursor-pointer">
               <input
                 type="checkbox"
                 checked={agreedToPrivacy}
                 onChange={(e) => setAgreedToPrivacy(e.target.checked)}
-                className="mt-1 h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2"
+                className="h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2 flex-shrink-0"
               />
               <span className="text-sm text-foreground">
                 I have read and agree to the <strong>Privacy Policy</strong>
