@@ -7,6 +7,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
 import { useState, useEffect } from 'react';
@@ -127,30 +128,30 @@ export const TermsModal = ({ open, onAccept }: TermsModalProps) => {
         </ScrollArea>
 
         <DialogFooter className="p-6 pt-4 space-y-4">
-          <div className="space-y-3 w-full">
-            <label className="flex items-center gap-3 cursor-pointer">
-              <input
-                type="checkbox"
+          <div className="space-y-4 w-full">
+            <div className="flex items-center gap-3 cursor-pointer">
+              <Checkbox
+                id="terms"
                 checked={agreedToTerms}
-                onChange={(e) => setAgreedToTerms(e.target.checked)}
-                className="h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2 flex-shrink-0"
+                onCheckedChange={(checked) => setAgreedToTerms(checked === true)}
+                className="data-[state=checked]:bg-primary data-[state=checked]:border-primary"
               />
-              <span className="text-sm text-foreground">
+              <label htmlFor="terms" className="text-sm text-foreground cursor-pointer">
                 I have read and agree to the <strong>Terms of Service</strong>
-              </span>
-            </label>
+              </label>
+            </div>
             
-            <label className="flex items-center gap-3 cursor-pointer">
-              <input
-                type="checkbox"
+            <div className="flex items-center gap-3 cursor-pointer">
+              <Checkbox
+                id="privacy"
                 checked={agreedToPrivacy}
-                onChange={(e) => setAgreedToPrivacy(e.target.checked)}
-                className="h-4 w-4 text-primary bg-background border-border rounded focus:ring-primary focus:ring-2 flex-shrink-0"
+                onCheckedChange={(checked) => setAgreedToPrivacy(checked === true)}
+                className="data-[state=checked]:bg-primary data-[state=checked]:border-primary"
               />
-              <span className="text-sm text-foreground">
+              <label htmlFor="privacy" className="text-sm text-foreground cursor-pointer">
                 I have read and agree to the <strong>Privacy Policy</strong>
-              </span>
-            </label>
+              </label>
+            </div>
           </div>
 
           <div className="flex justify-end w-full">
